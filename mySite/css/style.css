@@ -1,0 +1,174 @@
+body {
+    
+}
+.opacityy {
+    opacity: 0.3;
+}
+.continer {
+    width: 1300px;
+    margin-left: 85px;
+}
+.header{
+    width: 100%;
+    height: 820px;
+    padding: 20px 20px;
+    flex-direction: column;
+    padding: 10 10px;
+    
+}
+.header .top {
+    width: 100%;
+    height: 12%;
+    justify-content: center;
+    margin-left: 20px;
+    text-transform: uppercase; 
+    
+    margin-bottom: 20px;
+}
+.header .top #logo {
+    padding: 15px 0px 10px 50px;
+    width: 100%;
+    height: 70px;
+}
+.header .top #logo img {
+    width: 200px;
+    height: 50px; 
+    border: 2px solid white;
+} 
+.header .top #myList {
+    padding: 30px 20px;
+    font: 16px clarkson helvetik;
+}
+.header .top #myList p {
+    color: white;
+    cursor: pointer;
+}
+.header .top #myList #pro {
+    
+}
+.header .top #myList #intro {
+    
+}
+.header .top #myList #more {
+    
+
+}
+.header .top #getStarted {
+    padding: 15px 0 20px 200px;
+    font: 14px clarkson helvetika;
+}
+.header .top #getStarted button {
+    font-weight: bold;
+    height: 45px;
+    width: 150px;
+    background-color: white;
+    border: 2px solid #rgb(139, 0, 145);
+    
+    
+}
+.header .top #getStarted button p {
+    color: rgb(139, 0, 145);
+    text-transform: uppercase;
+    margin-top: 10px;
+} 
+#bodyy {
+    width: 900px;
+    height: 65%;
+    border-top-color: white;
+    border-top: 1rem solid;
+    margin: auto;
+    margin-top: 80px;
+    background: rgb(0,0,0,0.1);
+    
+}
+#bodyy .myDiv {
+    width:  500px;
+    height: 45%;
+    margin: auto;
+    margin-top: 150px; 
+    
+}
+#bodyy .myDiv .moved {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+   
+}
+#bodyy .myDiv .moved .body-text {
+    color: white; 
+    font-family: clarkson helvetika;
+    font-size: 50px;
+}
+.second {
+    width: 100%;
+    height: 820px;
+    background-color: white;
+    padding: 10 10px;
+    text-align: center;
+    padding-top: 220px;
+    
+}
+
+.second .text {
+    width: ;
+    font-size: 50px;
+    color: #778899;
+}
+.moveText {
+    width: 100%;
+    height: 820px;
+    background-color: white;
+    padding: 10 10px;
+    text-align: center;
+    padding-top: 350px;
+    
+}
+.textDiv {
+    font-size: 50px;
+    color: #778899;
+}
+.third {
+    width: 100%;
+    height: 820px;
+    background-color: #f0e9ee;
+    padding-top: 100px;
+}
+.third #third-r {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    
+}
+.third #third-r #video {
+    margin: auto;
+
+}
+.third #third-r #video img {
+    width: auto;
+    height: 400px;
+}
+.third #third-r #list {
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+.third #third-r #list li {
+    font: clarkson helvetika;
+    color: black;
+    list-style: none;
+}
+.fourth {
+    width: 100%;
+    height: 820px;
+    background-color: #5b5e6a;
+    padding-top: 200px;
+}
+.fourth p {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
