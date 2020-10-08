@@ -10,9 +10,6 @@ for (i = 0; i < myNodelist.length; i++) {
 
 
 
-
-
-
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
