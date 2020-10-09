@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=devise-width , initial-scale=1.0">
+    
+        <style>
+            body {
+                background-color: #778899;
+            }
+            .h1 {
+                margin: auto;
+                width: 350px;
+                height: 110px;
+                margin-top: 20px;
+            }
+            .h1 h1 {
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            table {
+                margin: auto;
+                border: 2px solid black;
+                margin-top: 0px;
+            }
+            input {
+                width: 300px;
+                height: 80px;
+                font-size: 45px;
+            }
+            button {
+                width: 70px;
+                height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="h1">
+            <h1>Calculator</h1>
+        </div>
+        <table>
+            <tr>
+                <td colspan="4"><input id="input"></td>
+            </tr>
+            <tr>
+                <td><button onclick="put(7)">7</button></td>
+                <td><button onclick="put(8)">8</button></td>
+                <td><button onclick="put(9)">9</button></td>
+                <td><button onclick="put('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="put(4)">4</button></td>
+                <td><button onclick="put(5)">5</button></td>
+                <td><button onclick="put(6)">6</button></td>
+                <td><button onclick="put('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="put(1)">1</button></td>
+                <td><button onclick="put(2)">2</button></td>
+                <td><button onclick="put(3)">3</button></td>
+                <td><button onclick="put('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="clean()">C</button></td>
+                <td><button onclick="put(0)">0</button></td>
+                <td><button onclick="put('/')">/</button></td>
+                <td><button onclick="e()">=</button></td>
+            </tr>
+            
+            
+        </table>
+        <script>
+            const clean =() => {
+                let input = document.querySelector("input")
+                input.value = input.value.substring(0,input.value.lenght-1)
+            }
+            const put = (para) => {
+                let input = document.querySelector("input")
+                input.value = input.value + para
+            }
+            const e = () => {
+                let input = document.querySelector("input")
+                input.value = eval(input.value)
+            }
+            
+        </script>
+    </body>
+</html>
