@@ -181,8 +181,8 @@ body {
 
 
 @media only screen and (max-width: 960px) {
-    .continer, .body {
-        width: 85%;
+    .top, .body {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 720px) {
