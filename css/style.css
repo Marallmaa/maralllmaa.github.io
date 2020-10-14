@@ -178,6 +178,11 @@ body {
     text-transform: uppercase;
 
 }
+@media only screen and (max-width: 1100px) {
+    .top, .body {
+        width: 100%;
+    }
+}
 
 
 @media only screen and (max-width: 960px) {
