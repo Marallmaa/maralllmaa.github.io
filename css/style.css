@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
   
-
-  
-body {
-    
-}
 .opacityy {
     opacity: 0.3;
 }
@@ -49,16 +44,7 @@ body {
     color: white;
     cursor: pointer;
 }
-.header .top #myList #pro {
-    
-}
-.header .top #myList #intro {
-    
-}
-.header .top #myList #more {
-    
 
-}
 .header .top #getStarted {
     padding: 15px 0 20px 200px;
     font: 14px clarkson helvetika;
