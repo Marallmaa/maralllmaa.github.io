@@ -1,12 +1,11 @@
-let opacityy = document.getElementsByClassName("opacityy")[0]
+
 
 const getStarted = () => {
     let text 
     let name = prompt("Please enter your name: ")
     text = "Hello " +name
     document.querySelector(".body-text").innerHTML = text
-    opacityy.style.opacity = 1
-    opacityy.disabled = false
+    
     
     
 }
