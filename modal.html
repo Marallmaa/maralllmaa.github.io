@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src=""></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="">
+        <title></title>
+        <style>
+            html, body {
+                width:100%;
+                height:100%;
+                margin:0;
+            }
+
+            .page-wrapper {
+                width:100%;
+                height:100%;
+                background-size:cover;
+            }
+
+            .blur {
+                -webkit-filter: blur(5px);
+                -moz-filter: blur(5px);
+                -o-filter: blur(5px);
+                -ms-filter: blur(5px);
+                filter: blur(5px);
+            }
+
+            a.btn {
+                width:150px;
+                display:block;
+                margin:-25px 0 0 -75px;
+                padding:1em 0;
+                position:absolute;
+                top:50%; left:50%;
+                font:1.125em;
+                font-weight:700;
+                text-align:center;
+                text-decoration:none;
+                color:#fff;
+                border-radius:5px;
+                background:rgb(34, 97, 148);
+            }
+
+            .modal-wrapper{
+                width:100%;
+                height:100%;
+                position:fixed;
+                top:0; left:0;
+                background: gray;
+                visibility:hidden;
+                opacity:0;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+            }
+
+            .modal-wrapper.open{
+                opacity:1;
+                visibility:visible;
+            }
+
+            .modal{
+                width:500px;
+                height:350px;
+                display:block;
+                margin:50% 0 0 -250px;
+                position:relative;
+                top:50%; left:50%;
+                background:#fff;
+                opacity:0;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .modal-wrapper.open .modal{
+                margin-top:-200px;
+                opacity:1;
+            }
+
+            .head{
+                width:90%;
+                height:32px;
+                padding:1.5em 5%;
+                overflow:hidden;
+                background:#c9d4d6;
+            }
+            .head p {
+                font-size: 22px;
+                
+                margin: auto;
+            }
+
+            .btn-close::before, .btn-close::after{
+                content:'';
+                width:32px;
+                height:6px;
+                display:block;
+                background:#fff;
+            }
+
+            .btn-close::before{
+                margin-top:12px;
+                -webkit-transform:rotate(45deg);
+                -moz-transform:rotate(45deg);
+                -o-transform:rotate(45deg);
+                transform:rotate(45deg);
+            }
+
+            .btn-close::after{
+                margin-top:-6px;
+                -webkit-transform:rotate(-45deg);
+                -moz-transform:rotate(-45deg);
+                -o-transform:rotate(-45deg);
+                transform:rotate(-45deg);
+            }
+
+            .content{
+                padding:5%;
+                height: 60%;
+            }
+            .foot {
+                height: 15%;
+                background-color: rgb(94, 89, 25);
+            }
+            .foot button {
+                float: right;
+                width: 110px;
+                height: 50px;
+                cursor: pointer;
+            }
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <a class="btn trigger" href="javascript:;">Delete</a>
+        </div>
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="head">
+                    <p>Are you sure you want to delete?</p>
+                </div>
+                <div class="content">
+                    <h1>This action cannot be undone.</h1>
+                </div>
+                <div class="foot">
+                    <button class="btn cancel">Cancel</button>
+                    <button style="background-color: rgb(153, 48, 48);">Delete</button>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $( document ).ready(function() {
+                $('.trigger').click(function() {
+                    $('.modal-wrapper').toggleClass('open');
+                    $('.page-wrapper').toggleClass('blur');
+                    return false;
+                });
+            });
+            $( document ).runn(function() {
+                $('button').click(function() {
+                    $('.modal-wrapper').toggleClass('blur');
+                    $('.page-wrapper').toggleClass('open');
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
