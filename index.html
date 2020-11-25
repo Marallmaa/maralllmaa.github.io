@@ -1,72 +1,39 @@
-<!DOCKTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel= "stylesheet" href="./css/style.css">
-        <title>Maralllmaa</title>
+        <title>events</title>
+        <style>
+            
+        </style>
     </head>
     <body>
-        <div class="opacityy" disabled="true">
-            <div class="header" style="background-image: url('./img/bg.jpg');">
-                <div class="continer">
-                    <div class="top">
-                        <div class="row">
-                            <div class="col-md-4" id="logo">
-                                <a href="file:///Users/macbookair2015/Documents/IT%20level-1/%20folder/mySite/index.html" target="_blank"><img src="./img/Screen Shot 2020-08-30 at 9.02.41 AM.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4" id="myList">
-                                <div class="row" style="justify-content: center;">
-                                <div class="col-4" id="pro" onclick="myProjects"><p>Projects</p></div>
-                                <div class="col-4" id="intro" onclick="myIntroduce"><p>Introduce</p></div>
-                                <div class="col-4" id="more"><a href="file:///Users/macbookair2015/Documents/IT%20level-1/%20folder/mySite/more.html" target="_blank"><p>More</p></a></div>
-                                </div>
-                            </div>
-                            <div class="col-4"  id="getStarted">
-                                <button onclick="getStarted()"><p>Get started</p></button>
-                            </div>
-                        </div>
-                                    
-                    </div>
-                    <div id="bodyy">
-                        <div class="myDiv">
-                            <div data-aos="" class="moved"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                                <p class="body-text"></p>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
+        <img src="../ folder/accets/images/Romy_Schneider.jpg" id="img" onmouseover="bigImage()" onmouseout="normalImage()" height="200px" width="auto">
 
-            </div>
-            <div class="third">
-                <div class="row" id="third-r">
-                    <div class="col-md-5" id="list">
-                        <ul>
-                            <a href="./Project%20List/Calculator/calculator.html" target="_blank"><li>Calculator</li></a>
-                            <a href="./Project%20List/Div%20visibility/index.html" target="_blank"><li>Div visibility</li></a>
-                            <a href="./Project%20List/Log%20in/login.html" target="_blank"><li>Log in</li></a>
-                            <a href="./Project%20List/Counter/index.html" target="_blank"><li>Counter</li></a>
-                            <a href="./Project%20List/BackgroundColorChanger/background.html" target="_blank"><li>Background color changer</li></a>
-                            <a href="./Project%20List/Slide-show/index.html" target="_blank"><li>Slide show</li></a>
-                            <a href="./Project%20List/Stopwatch/index.html" target="_blank"><li>Stopwatch</li></a>
-                            <a href="./Project%20List/TODO/todo.html" target="_blank"><li>TODO list</li></a>
-                            <a href="./Project%20List/Countdown%20timer/countdown.html" target="_blank"><li>Countdown timer</li></a>
-                            <a href="./Project%20List/GIF%20search/gif_search.html" target="_blank"><li>GIF search</li></a>
-                        </ul>
-                    </div>
-                    <div class="col-md-7" id="video">    
-                        <img src="./img/project1.jpg"></img>
-                    </div>
-                </div>
-            </div>
-            <div class="fourth">
-                <p>Maralmaa</p>
-                <p>Jamiyansuren</p>
-            </div>
-            <script src="js/index.js"></script>
-        </div>
+        <button id="button">Click me</button>
+        <p id="text"></p>
+
+        <script>
+            let img = document.querySelector("img")
+            function bigImage(){
+                img.style.height = "400px"
+            }
+            function normalImage(){
+                img.style.height = "200px"
+            }
+
+
+            document.querySelector("#button").addEventListener("click" , myFunction)
+                function myFunction(){
+                    document.querySelector("#text").innerHTML = "Clicked"
+                }
+            
+
+
+        </script>
+            
+                
+        
+       
+
+
     </body>
 </html>
