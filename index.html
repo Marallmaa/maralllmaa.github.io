@@ -1,31 +1,55 @@
 <html>
     <head>
-        <title>events</title>
+        <title>Toast notification</title>
         <style>
-            
+            .button {
+                width: 150px;
+                height: 35px;
+                background-color: rgb(127, 101, 133);
+                font-size: 16px;
+                margin-bottom: 5px;
+                border-radius: 5px;
+                margin-left: 200px;
+            }
+            .toastDiv {
+                height: 39px;
+                width: 250px;
+                background-color: rgb(127, 101, 133);
+                font-size: 20px;
+                padding-left: 50px;
+                padding-top: 10px;
+                border-radius: 5px;
+                margin-left: 200px;
+                display: none;
+            }
         </style>
     </head>
     <body>
-        <img src="../ folder/accets/images/Romy_Schneider.jpg" id="img" onmouseover="bigImage()" onmouseout="normalImage()" height="200px" width="auto">
-
-        <button id="button">Click me</button>
-        <p id="text"></p>
-
+        <button class="button" onclick="showNoti()">Show Snackbar</button>
+        <div class="toastDiv">This is toast notification.</div>
+       
         <script>
-            let img = document.querySelector("img")
-            function bigImage(){
-                img.style.height = "400px"
-            }
-            function normalImage(){
-                img.style.height = "200px"
-            }
+           let toastDiv = document.querySelector(".toastDiv")
 
+           function showNoti(){
+               if(toastDiv.style.display === "block"){
+                   setTimeout(timeFunction , 2000)
+                   function timeFunction(){
+                    toastDiv.style.display = "none"
+                   }
+                    
+               }
+               else{
+                    toastDiv.style.display = "block"
 
-            document.querySelector("#button").addEventListener("click" , myFunction)
-                function myFunction(){
-                    document.querySelector("#text").innerHTML = "Clicked"
-                }
+               }
+           }
+
             
+
+
+
+           
 
 
         </script>
