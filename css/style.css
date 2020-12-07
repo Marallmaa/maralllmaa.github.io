@@ -139,7 +139,7 @@ body {
     height: 820px;
     padding-top: 100px;
 }
-.third .projects {
+.third .projects ul{
     margin: auto;
     text-transform: uppercase;
     text-decoration: none;
