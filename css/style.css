@@ -48,9 +48,11 @@ body {
 .header .top #myList p {
     color: white;
     cursor: pointer;
+    
 }
-.header .top #myList #pro {
-    box-shadow: 
+.header .top #myList #pro:hover {
+    
+    box-shadow: outset 0px 0px 5px 5px white;
 }
 .header .top #myList #intro {
     
@@ -89,9 +91,7 @@ body {
     }
     
 }
-.header .top #clickMe button:hover {
-    animation-play-state: paused;
-}
+
 .header .top #clickMe button p {
     color: rgb(139, 0, 145);
     text-transform: uppercase;
@@ -170,28 +170,33 @@ body {
     font-size: 35px;
 }
 .third .projects li {
-    font-family: "Cursive Brush Script MT";
+    
+    font-family: Helvetica;
     color: white;
     list-style: none;
 }
 .third .projects a {
     text-decoration: none;
+    transition: transform 2s linear ;
+    
 }
-.third .projects a:hover {
-    transform: scale(1.5), translateX(30px);
+.third .projects li:hover {
+    color: rgb(139, 0, 145);
+    transform: scale(1.3)  translateX(20px);
 
 }
 .fourth {
     width: 100%;
     height: 820px;
     background-color: #5b5e6a;
-    padding-top: 300px;
+    padding-top: 250px;
 }
 .fourth p {
     font-size: 100px;
     color: white;
     text-align: center;
     text-transform: uppercase;
+    font-family: Lucida Handwriting;
 
 }
 @media screen and (max-width: 960px) {

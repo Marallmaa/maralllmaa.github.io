@@ -17,7 +17,7 @@ const getStarted = () => {
         document.querySelector(".body-text").innerHTML = text 
 
         document.querySelector("#clickMe").style.animation = "none"
-
+        
         logIn = true
         ulClass.disabled = true
         topClass.disabled = true
