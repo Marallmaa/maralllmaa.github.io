@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 }
 .header .top #myList #pro {
-    
+    box-shadow: 
 }
 .header .top #myList #intro {
     
@@ -59,24 +59,47 @@ body {
     
 
 }
-.header .top #getStarted {
+.header .top #clickMe {
     padding: 15px 0 20px 200px;
     font: 14px clarkson helvetika;
+
+    animation: boomb 2s linear infinite ;
+    animation-play-state: running;
 }
-.header .top #getStarted button {
+.header .top #clickMe button {
     font-weight: bold;
     height: 45px;
     width: 150px;
     background-color: white;
     border: 2px solid #rgb(139, 0, 145);
-    
+
+    box-shadow: outset 0 0 15px 15px white;
     
 }
-.header .top #getStarted button p {
+@keyframes boomb {
+    50% {
+        transform: translateY(10%);
+        opacity: 0.4;
+        
+    }
+    100% {
+        transform: translateY(20%);
+        opacity: 1;
+
+    }
+    
+}
+.header .top #clickMe button:hover {
+    animation-play-state: paused;
+}
+.header .top #clickMe button p {
     color: rgb(139, 0, 145);
     text-transform: uppercase;
     margin-top: 10px;
 } 
+
+
+
 #bodyy {
     width: 900px;
     height: 65%;
@@ -137,25 +160,32 @@ body {
 .third {
     width: 100%;
     height: 820px;
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-left: 200px;
+    
 }
-.third .projects ul{
+.third .projects {
     margin: auto;
     text-transform: uppercase;
-    text-decoration: none;
-    
+    font-size: 35px;
 }
 .third .projects li {
     font-family: "Cursive Brush Script MT";
     color: white;
-    font-size: 35px;
+    list-style: none;
+}
+.third .projects a {
     text-decoration: none;
+}
+.third .projects a:hover {
+    transform: scale(1.5), translateX(30px);
+
 }
 .fourth {
     width: 100%;
     height: 820px;
     background-color: #5b5e6a;
-    padding-top: 200px;
+    padding-top: 300px;
 }
 .fourth p {
     font-size: 100px;

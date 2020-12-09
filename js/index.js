@@ -16,6 +16,8 @@ const getStarted = () => {
         text = "Hello " +name
         document.querySelector(".body-text").innerHTML = text 
 
+        document.querySelector("#clickMe").style.animation = "none"
+
         logIn = true
         ulClass.disabled = true
         topClass.disabled = true
@@ -28,6 +30,7 @@ document.querySelector("#pro").addEventListener("click" , function(){
 document.querySelector("#intro").addEventListener("click" , function(){
     document.querySelector(".fourth").scrollIntoView({behavior: "smooth"})
 }) 
+
 
 
 
