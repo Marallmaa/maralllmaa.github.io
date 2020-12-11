@@ -32,6 +32,22 @@ document.querySelector("#intro").addEventListener("click" , function(){
 }) 
 
 
+const images = ["./img/projectsPhotos/img1.jpg" , "./img/projectsPhotos/img2.jpg" , "./img/projectsPhotos/img3.jpg", "./img/projectsPhotos/img4.jpg" , "./img/projectsPhotos/img5.jpg" , "./img/projectsPhotos/img6.jpg" ,  "./img/projectsPhotos/img7.jpg" , "./img/projectsPhotos/img8.jpg" , "./img/projectsPhotos/img9.jpg" , "./img/projectsPhotos/img10.jpg"]
+let imagesProjects = document.querySelector(".imageProjects")
+let i = 0
+
+const syncPhotos = document.querySelectorAll("#syncPhotos")
+
+syncPhotos.onmouseover = movePhotos
+const movePhotos = () => {
+    imagesProjects.src = images[i]
+    i++
+    if(i === images.length){
+        i = 0
+    }
+}
+
+
 
 
 
