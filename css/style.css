@@ -4,9 +4,6 @@
   
 
   
-body {
-    
-}
 .opacityy {
     
 }
@@ -18,7 +15,6 @@ body {
     width: 100%;
     height: 820px;
     padding: 20px 20px;
-    flex-direction: column;
     padding: 10 10px;
     
 }
@@ -30,6 +26,7 @@ body {
     text-transform: uppercase; 
     
     margin-bottom: 20px;
+    
 }
 .header .top #logo {
     padding: 15px 0px 10px 50px;
@@ -44,15 +41,16 @@ body {
 .header .top #myList {
     padding: 30px 20px;
     font: 16px clarkson helvetik;
+    
 }
 .header .top #myList p {
     color: white;
     cursor: pointer;
     
 }
-.header .top #myList #pro:hover {
+.header .top #myList #pro {
     
-    box-shadow: outset 0px 0px 5px 5px white;
+    
 }
 .header .top #myList #intro {
     
@@ -64,6 +62,7 @@ body {
 .header .top #clickMe {
     padding: 15px 0 20px 200px;
     font: 14px clarkson helvetika;
+    width: ;
 
     animation: boomb 2s linear infinite ;
     animation-play-state: running;
@@ -209,3 +208,35 @@ body {
 }
 
 
+@media screen and(max-width:720px) {
+    .continer {
+        width: 100%;
+        
+    }
+    .header{
+        width: 100%;
+        float: left;
+    }
+    #bodyy {
+        width: 100%;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width:900px ) {
+    .second {
+        background-color: #000000;
+        font-size: 30px;
+        
+    }
+    .second .imageProjects {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .fourth {
+        font-size: 50px;
+    }
+
+}
