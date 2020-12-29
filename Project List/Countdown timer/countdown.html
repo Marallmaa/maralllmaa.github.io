@@ -1,0 +1,49 @@
+<!DOCKTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=devise-width , initial-scale=1.0">
+        <link rel= "stylesheet" href="./accets/css/dcss">
+        <title>Countdown Timer</title>
+        <style>
+           .out {
+               width: 500px;
+               height: 200px;
+               margin: auto;
+               background-color: rgb(179, 245, 236);
+               border-radius: 3px;
+               margin-top: 250px;
+           }
+           .out .three {
+               margin: auto;
+               height: 100px;
+               flex-direction: row;
+               padding-left: 130px;
+               padding-top: 20px;
+
+           }
+           .out #input #button {
+               
+               width: 80px;
+           }
+           .out .p {
+               margin-left: 58px ;
+               font-size: 40px;
+           }
+           .out .view {
+                margin-left: 240px;
+                font-size: 30px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="out">
+            <div class="three">
+                <div class="p">seconds</div>
+                <input id="input" type="number">
+                <button onclick="setTime()" id="button">Set timer</button>
+            </div>
+            <div class="view">0</div>
+        </div>
+        <script src="countdown.js"></script>
+    </body>
